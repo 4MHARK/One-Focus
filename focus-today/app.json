@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "One Focus",
+    "slug": "first-light",
+    "scheme": "firstlight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.mhark.firstlight",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#295840",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "sounds": ["./assets/notification.wav"]
+        }
+      ]
+    ]
+  }
+}
